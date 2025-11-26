@@ -158,6 +158,13 @@ nav {
   height: auto;
   border-radius: 8px;
 }
+.skills-chart h2 {
+  margin-top: 25px;
+}
+
+.skills-chart h3 {
+  margin-top: 25px;
+}
 
 .contact-section .box {
   background: rgba(255, 255, 255, 0.12);
@@ -281,11 +288,7 @@ nav {
   footer {
     padding: 15px;
   }
-  .profile-pic {
-    width: 120px;
-    height: 120px;
-    margin: 0 auto 12px;
-  }
+
   .headshot {
     width: 120px;
     height: 120px;
@@ -365,8 +368,8 @@ footer h3 {
 }
 
 .icon-space-footer:hover {
-  width: 75px;
-  height: 75px;
+  width: 52px;
+  height: 52px;
 }
 .box ul {
   padding-left: 18px;
