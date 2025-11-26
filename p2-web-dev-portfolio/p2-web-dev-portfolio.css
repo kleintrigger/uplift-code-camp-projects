@@ -19,15 +19,15 @@ header {
   justify-content: center;
   gap: 40px;
   width: 100%;
-  position: relative;
+
   background: rgba(0, 15, 35, 0.65);
-  backdrop-filter: blur(10px);
+
   padding: 12px 0;
-  position: fixed; /* stays at top */
+  position: fixed;
   top: 0;
   left: 0;
   justify-content: center;
-  z-index: 9999;
+  z-index: 9999; /* makes the header visible when scrolling down */
 }
 .header-logo {
   width: 55px;
