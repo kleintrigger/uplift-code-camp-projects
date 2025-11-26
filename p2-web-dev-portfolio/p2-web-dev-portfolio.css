@@ -73,6 +73,10 @@ nav {
   padding: 10px 12px;
   height: fit-content;
 }
+#bio-section p,
+h3 {
+  margin-top: 3px;
+}
 
 #motivation-section {
   grid-column: 2 / 3;
@@ -152,6 +156,7 @@ nav {
 .quote-img {
   width: 30px;
   height: 20px;
+  margin-top: 10px;
 }
 
 .skills-chart {
