@@ -42,22 +42,25 @@ h1 {
   text-shadow: none;
   text-align: center;
   margin-top: 100px;
+  animation: colorPulse 3s infinite;
 }
 
 h1,
 h2,
 h3 {
   font-family: "Orbitron", sans-serif;
-  color: #e8f0ff;
+  color: #9fe9ff;
 }
 
 p,
-li,
 a,
 footer,
 body {
   font-family: "Exo 2", sans-serif;
-  color: #b3f7ff;
+  color: #a0eaff;
+}
+li {
+  color: #c8fbff;
 }
 a {
   text-decoration: none;
@@ -136,6 +139,7 @@ nav {
   border-radius: 14px;
   max-width: 600px;
   width: 100%;
+  animation: fadeUp 0.8s ease forwards;
 }
 .box h1,
 .box h2,
@@ -182,10 +186,13 @@ h3 {
   margin: 0 auto 10px;
   display: block;
 }
+
 .quote-img {
   width: 30px;
   height: 20px;
   margin-top: 10px;
+
+  animation: float 3s ease-in-out infinite;
 }
 
 .skills-chart {
@@ -224,13 +231,24 @@ h3 {
   width: 100%;
 }
 #contact-section a {
-  color: #b3f7ff;
+  color: #9fe9ff;
+  transition: color 0.25s ease, text-shadow 0.25s ease;
 }
+#contact-section a:hover {
+  color: #00eaff;
+}
+
 #contact-section .icon-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 5px;
+}
+#contact-section .icon-container a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 #projects-section {
@@ -270,6 +288,11 @@ h3 {
   border-radius: 6px;
   object-position: center;
 }
+.project1-img:hover,
+.project2-img:hover,
+.project3-img:hover {
+  animation: zoomIn 0.3s forwards;
+}
 #projects-section .projects-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -283,7 +306,11 @@ h3 {
   height: 80px;
   margin-bottom: 5px;
 }
-
+.icon-space:hover {
+  width: 100px;
+  height: 100px;
+  transition: width 0.5s ease, height 0.5s ease;
+}
 #lblToggle div {
   width: 30px;
   height: 4px;
@@ -298,7 +325,12 @@ h3 {
 
 nav a {
   font-size: 20px;
-  color: #e8f0ff;
+  color: #9fe9ff;
+  transition: color 0.25s ease, text-shadow 0.25s ease;
+}
+
+nav a:hover {
+  color: #00eaff;
 }
 @media (max-width: 600px) {
   .container {
@@ -328,6 +360,7 @@ nav a {
     max-width: 600px;
     width: 100%;
     margin: 0 auto;
+    animation: fadeUp 0.8s ease forwards;
   }
   #lblToggle {
     display: inline-block;
@@ -409,6 +442,7 @@ footer h3 {
   margin-bottom: 5px;
   width: 40px;
   height: 40px;
+  transition: width 0.25s ease, height 0.25s ease;
 }
 
 .icon-space-footer:hover {
@@ -426,4 +460,46 @@ footer h3 {
 
 #chkToggle {
   display: none;
+}
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+@keyframes zoomIn {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.05);
+  }
+}
+
+@keyframes colorPulse {
+  0% {
+    color: #00eaff;
+    text-shadow: 0 0 8px #00eaff;
+  }
+  50% {
+    color: #4da8ff;
+    text-shadow: 0 0 16px #4da8ff;
+  }
+  100% {
+    color: #00eaff;
+    text-shadow: 0 0 8px #00eaff;
+  }
 }
