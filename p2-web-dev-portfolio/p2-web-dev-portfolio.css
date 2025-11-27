@@ -139,7 +139,7 @@ nav {
   border-radius: 14px;
   max-width: 600px;
   width: 100%;
-  animation: fadeUp 0.8s ease forwards;
+  animation: fadeUp 1s ease forwards;
 }
 .box h1,
 .box h2,
@@ -194,17 +194,62 @@ h3 {
 
   animation: float 3s ease-in-out infinite;
 }
-
-.skills-chart {
-  text-align: center;
-  margin: 20px 0;
+.skills {
+  width: 320px; /* adjust to your layout */
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  font-family: sans-serif;
 }
 
-.chart-img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
+.skill span {
+  font-weight: bold;
+  margin-bottom: 4px;
+  display: block;
 }
+
+.bar {
+  width: 100%;
+  height: 25px;
+  background: #ddd;
+  border-radius: 6px;
+  overflow: hidden;
+  display: flex;
+}
+
+.fill {
+  height: 100%;
+  border-radius: 6px;
+  color: white;
+  font-size: 10px;
+  padding-left: 4px;
+  display: flex;
+
+  align-items: center;
+}
+
+.fill.html {
+  width: 70%;
+  background: #ff6b6b;
+}
+.fill.css {
+  width: 70%;
+  background: #4dabf7;
+}
+.fill.js {
+  width: 60%;
+  background: #ffd43b;
+}
+.fill.py {
+  width: 10%;
+  background: #69db7c;
+}
+
+.fill.react {
+  width: 0%;
+  color: gray;
+}
+
 #skills-breakdown-section h3 {
   margin-top: 25px;
 }
@@ -398,22 +443,6 @@ nav a:hover {
     margin-top: 10px;
     margin-bottom: 14px;
     line-height: 1.4;
-  }
-
-  .skills .box {
-    padding: 0;
-    margin: 0;
-    height: fit-content;
-  }
-
-  .skills-chart {
-    padding: 0;
-    margin: 0;
-  }
-
-  .skills-chart .chart-img {
-    object-fit: contain;
-    display: block;
   }
 }
 
