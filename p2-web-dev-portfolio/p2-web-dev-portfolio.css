@@ -194,12 +194,32 @@ h3 {
 
   animation: float 3s ease-in-out infinite;
 }
+#skills-section figure {
+  width: 100%;
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  margin: 10px auto;
+  text-align: center;
+}
+
+#skills-section figcaption {
+  text-align: center;
+  font-size: 10px;
+  color: #c8fbff;
+}
 .skills {
   width: 320px; /* adjust to your layout */
   display: flex;
   flex-direction: column;
   gap: 12px;
   font-family: sans-serif;
+  margin: 0 auto;
+  border: 5px solid gray;
+  border-radius: 10%;
+  background: rgba(255, 255, 255, 0.12);
+
+  padding: 15px 20px;
 }
 
 .skill span {
