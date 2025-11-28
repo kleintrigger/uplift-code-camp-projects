@@ -447,7 +447,7 @@ h3 {
 
   gap: 15px;
   width: 100%;
-  align-items: stretch;
+  align-items: center;
 }
 
 .icon-space {
@@ -487,6 +487,19 @@ nav a:hover {
     display: grid; /* keep grid behavior */
     grid-template-columns: 1fr; /* stack all boxes cleanly */
     width: 100%;
+  }
+
+  #bio-section,
+  #motivation-section,
+  #skills-section,
+  #skills-breakdown-section,
+  #goals-section,
+  #projects-section,
+  #contact-section,
+  #contact-form-section,
+  #contact-links-section {
+    grid-row: auto !important;
+    grid-column: 1 / -1 !important;
   }
 
   nav {
