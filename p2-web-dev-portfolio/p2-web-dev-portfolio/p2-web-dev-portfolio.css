@@ -484,7 +484,8 @@ nav a:hover {
 }
 @media (max-width: 600px) {
   .container {
-    display: block;
+    display: grid; /* keep grid behavior */
+    grid-template-columns: 1fr; /* stack all boxes cleanly */
     width: 100%;
   }
 
