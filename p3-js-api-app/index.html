@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Guessing Game</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <div id="instructions-modal" class="modal">
+      <div class="modal-content">
+        <span id="close-modal" class="close">&times;</span>
+        <h2>🎬 Movie Guessing Game Instructions</h2>
+        <p>Welcome to the Movie Guessing Game! Here's how to play:</p>
+        <ul>
+          <li>Guess the movie based on hints given by the game.</li>
+          <li>
+            There are 5 hints per movie. Hints 1–4 reveal parts of the movie
+            overview.
+          </li>
+          <li>Hint 5 gives the release year and genres of the movie.</li>
+          <li>You have up to 5 guesses per movie.</li>
+          <li>
+            A guess is correct if at least 2 words from the movie title match
+            your input (1 word for single-word titles).
+          </li>
+          <li>
+            The game has multiple levels. Each level has a number of movies to
+            attempt and a required score to progress.
+          </li>
+          <li>Your score and progress are tracked throughout the levels.</li>
+          <li>
+            At the end of each level, you can advance to the next level or
+            restart if you didn’t meet the required score.
+          </li>
+        </ul>
+        <button id="start-game">Start Game</button>
+      </div>
+    </div>
+    <div class="container">
+  <h1>Robert's Movie Guessing Game</h1>
+  <button id="how-to-play" class="how-to-play-btn">How to Play</button>
+
+  <div id="chat-messages"></div>
+
+  <div id="chat-input-container">
+    <input
+      type="text"
+      id="guess-input"
+      placeholder="Type your guess..."
+    />
+    <div class="button-row">
+      <button id="send-button">Send</button>
+      <button id="next-movie">Pass!</button>
+    </div>
+  </div>
+
+ 
+  <div id="score">Score: 0</div>
+</div>
+  </body>
+</html>
