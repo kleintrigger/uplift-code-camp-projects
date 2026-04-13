@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard | Job App Tracker</title>
+    <link rel="stylesheet" href="./css/dashboard.css" />
+    <style></style>
+  </head>
+  <body>
+    <header class="app-header">
+      <div class="header-container">
+        <h1 class="app-title">Job Application Tracker</h1>
+        <button id="logout-btn">Logout</button>
+      </div>
+    </header>
+
+    <h2 id="welcomeText" class="welcome"></h2>
+
+    <h2>Add New Application</h2>
+    <form id="application-form">
+      <input id="company" placeholder="Company" required />
+      <input id="position" placeholder="Position" required />
+      <select id="status">
+        <option value="Applied">Applied</option>
+        <option value="Interview">Interview</option>
+        <option value="Rejected">Rejected</option>
+      </select>
+      <input id="notes" placeholder="Optional notes" />
+      <button type="submit">Add</button>
+    </form>
+
+    <div class="applications-top">
+      <div class="filter-section">
+        <label for="status-filter">Filter:</label>
+        <select id="status-filter">
+          <option value="">All</option>
+          <option value="Applied">Applied</option>
+          <option value="Interview">Interview</option>
+          <option value="Rejected">Rejected</option>
+        </select>
+      </div>
+
+      <h3 class="applied-title">Applied Jobs</h3>
+    </div>
+
+    <div class="applications-header">
+      <span>Company</span>
+      <span>Position</span>
+      <span>Status</span>
+      <span>Notes</span>
+      <span>Actions</span>
+    </div>
+
+    <ul id="applications"></ul>
+
+    <script type="module" src="/js/api.js"></script>
+    <script type="module" src="/js/dashboard.js"></script>
+  </body>
+</html>

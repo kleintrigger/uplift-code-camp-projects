@@ -1,0 +1,149 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  padding: 0;
+  margin: 0;
+}
+
+.app-header {
+  width: 100%;
+  background-color: #4a90e2;
+  color: #fff;
+  padding: 15px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.app-title {
+  margin: 0;
+  font-size: 2rem;
+}
+#logout-btn {
+  padding: 8px 15px;
+  background: #dc3545;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+#logout-btn:hover {
+  background: #c82333;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 20px;
+}
+form {
+  margin: 20px auto;
+  display: flex;
+  gap: 10px;
+  max-width: 900px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+input,
+select,
+button {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+button {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+button:hover {
+  background: #0056b3;
+}
+
+#status-filter {
+  margin-left: 5px;
+  margin-bottom: 10px;
+}
+
+/* Grid headers */
+.applications-header,
+.app-item {
+  display: grid;
+  grid-template-columns: 1.5fr 1.5fr 1fr 2fr 2fr; /* Company | Position | Status | Notes | Actions */
+  gap: 10px;
+  align-items: center;
+  padding: 10px;
+  max-width: 900px;
+  margin: 5px auto;
+  border-radius: 6px;
+}
+.applications-top {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  max-width: 900px;
+  margin: 20px auto 10px auto;
+}
+
+.filter-section {
+  justify-self: start;
+}
+
+.applied-title {
+  text-align: center;
+  margin: 0;
+}
+
+.applications-header {
+  background: #007bff;
+  color: #fff;
+  font-weight: bold;
+  text-align: left;
+}
+
+.app-item {
+  background: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.app-item input {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.app-item button {
+  margin-right: 5px;
+  margin-top: 3px;
+}
+
+/* Welcome styling */
+.welcome {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+/* Notes + actions container */
+.notes-actions {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+@media (max-width: 600px) {
+  .applications-header,
+  .app-item {
+    grid-template-columns: 1fr;
+    gap: 5px;
+  }
+}

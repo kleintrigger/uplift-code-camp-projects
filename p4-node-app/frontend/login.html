@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login | Job App Tracker</title>
+    <link rel="stylesheet" href="./css/login.css" />
+    <style></style>
+  </head>
+  <body>
+    <div class="app-header">
+      <h1>Job App Tracker</h1>
+    </div>
+    <div class="form-container">
+      <h2>Login</h2>
+      <form id="login-form">
+        <input type="email" id="email" placeholder="Email" required />
+        <input type="password" id="password" placeholder="Password" required />
+        <button type="submit">Login</button>
+      </form>
+      <p>Don't have an account? <a href="/register.html">Register</a></p>
+    </div>
+
+    <script type="module" src="/js/api.js"></script>
+    <script type="module" src="/js/auth.js"></script>
+  </body>
+</html>
