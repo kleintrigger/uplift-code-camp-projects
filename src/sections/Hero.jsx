@@ -84,7 +84,7 @@ const Hero = () => (
             <motion.a
               whileHover={{ scale: 1.04, boxShadow: "0 0 28px rgba(124,58,237,0.45)" }}
               whileTap={{ scale: 0.97 }}
-              href="/Robert_Byron_Hao_Resume_2026.pdf"
+              href="https://drive.google.com/file/d/1D2zMczpRA6wRBWD6UOePLEzMPrLUBeWV/view?usp=sharing/Robert_Byron_Hao_Resume_2026.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="no-underline px-7 py-3 rounded-lg bg-[#7c3aed] text-white text-sm font-bold tracking-[0.02em] transition-all duration-200"
